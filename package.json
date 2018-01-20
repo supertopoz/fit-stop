@@ -11,12 +11,12 @@
     "start": "webpack --progress -colors",
     "dev-client": "webpack-dev-server --color --port 3000",
     "dev-server": "nodemon ./server/server.js localhost 8080",
-    "build":"webpack"
+    "build": "webpack"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.17.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "cors": "^2.8.4",
     "express": "^4.15.4",
     "express-session": "^1.15.6",
