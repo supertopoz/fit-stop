@@ -13,9 +13,7 @@ var Header = (props) => (
       <Navbar.Brand>
         <a href="/">Fit-Stop</a>
       </Navbar.Brand>
-      <Navbar.Toggle />
     </Navbar.Header>
-    <Navbar.Collapse>
       <Nav pullRight>
         {props.showButtons && props.loggedIn && (
           <NavItem eventKey={1} onClick={props.logOut}>Log Out</NavItem>
@@ -28,7 +26,6 @@ var Header = (props) => (
         )}
         <NavItem><span className='username'>{props.username}</span></NavItem>
       </Nav>
-    </Navbar.Collapse>
   </Navbar>
 
 );

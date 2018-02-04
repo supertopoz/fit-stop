@@ -341,11 +341,15 @@ class App extends React.Component {
     }
 
     return (
+      <div>
+      <Header username={this.state.username} goToLogin={this.goToLogin} goToSignUp={this.goToSignUp} loggedIn={this.state.loggedIn} logOut={this.logOut} showButtons={this.state.showButtons}/>
       <div className="container-fluid">
+
       <Jumbotron className="text-center sample Jumbotron">
-        <Header username={this.state.username} goToLogin={this.goToLogin} goToSignUp={this.goToSignUp} loggedIn={this.state.loggedIn} logOut={this.logOut} showButtons={this.state.showButtons}/>
+        
         {toBeRendered()}
       </Jumbotron>
+    </div>
     </div>
     )
   }

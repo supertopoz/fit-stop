@@ -57,7 +57,7 @@ class Workout extends React.Component {
         <Exercise exercise={this.props.exercise} />
         <ButtonToolbar className="ButtonToolbar">
           <Button onClick={this.props.pauseWorkout} bsStyle={this.props.pauseButtonStyle} bsSize="large">{this.props.pauseButtonText}</Button>
-          <Button onClick={this.props.goToDashboard} bsStyle="warning" bsSize="large">Quit & Back To Dashboard</Button>
+          <Button onClick={this.props.goToDashboard} bsStyle="warning" bsSize="large">Quit</Button>
           <Button onClick={this.props.goToSummary} bsStyle="info" bsSize="large">Summary</Button>
         </ButtonToolbar>
 

@@ -12,17 +12,20 @@ body {
   background-image: url(../img/bg.png);
 }
 
-.ButtonToolbar {
-  display: flex;
-  justify-content: center;
-}
-
-.Jumbotron {
-  margin-top: 3rem;
-}
-
 .jumbotron {
-  padding-top:10px;
+  margin-top: 30px
+}
+
+.ButtonToolbar {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  justify-self: auto;
+}
+
+.main-container{
+  margin-top: 60px;
+  margin-left: 10px;
 }
 
 .navbar {
@@ -30,14 +33,16 @@ body {
   font-size: 2.5rem;
 }
 
-/*.dashboard, .workout, .summary, .countdown, .loginPage, .signupPage {
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}*/
+.navbar-right{
+  font-size: 1.25rem
+}
 
+.navbar-fixed-top{
+   position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+}
 
 .summary, .countdown {
   padding-bottom: 10rem;
@@ -107,25 +112,6 @@ body {
   margin: auto;
 }
 
-
-/* OLD FOR REFERENCE
-
-.startButton {
-  width: 22%;
-  height: 0;
-  padding-bottom: 22%;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  box-shadow: 0px 0px 0.5px 1px #aaa, inset 0px 2px 2px 2px #fff;
-  margin: 18px auto auto auto;
-}*/
-
 .startButton:hover {
   background-image: url(../img/pizzagif.gif);
 }
@@ -137,14 +123,6 @@ body {
   cursor: pointer;
 }
 
-/*OLD FOR REFERENCE
-
-.startButton img {
-  width: 100%;
-  padding: 10%;
-  margin-top:10%;
-  cursor: pointer;
-}*/
 
 .countdownCircle {
   background-image: url(../img/pizzagif.gif);
@@ -159,17 +137,11 @@ body {
 
 }
 
-/* OLD - FOR REFERENCE
-.countdownCircle {
-  background-image: url(../img/pizzagif.gif);
-  width: 22%;
-  height: 0;
-  padding: 22%;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0px 0px 0.5px 1px #aaa, inset 0px 2px 2px 2px #fff;
-  margin: 18px auto auto auto;
-}*/
+
+.mainContent{
+  margin-top: 1000px !important;
+
+}
 
 .countdownNumber {
   position: absolute;
@@ -177,18 +149,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  font-size: 8em;
   color: #000;
+  font-size: 3em;
 }
 
-/* OLD - FOR REFERENCE
-.countdownNumber {
-  font-weight: bold;
-  font-size: 10vw;
-  color: #000;
-  width: 100%;
-  padding: 10%;
-}*/
 
 .timer {
   font-weight: bold;
@@ -203,12 +167,10 @@ body {
 
 .warmupTitle, .workoutTitle, .cooldownTitle {
   color: gray;
-  font-size: 2rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 5px;
   margin: .5rem;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  text-align: center;
 }
 
 .activeTitle {
@@ -269,6 +231,19 @@ body {
   margin-top: .5rem;
 }
 
+
+.jumbotron {
+  padding: 10px;  
+
+
+}
+.btn-toolbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+
 .alert {
   background: gray;
   color: white;
@@ -301,16 +276,6 @@ body {
   color: #000;
 }
 
-/*label{
-  display: inline-block;
-  float: left;
-  clear: left;
-  width: 150px;
-  text-align: right;
-  padding: 5px;
-  margin: 10px 5px;
-}*/
-
 .hide-alert {
   display: none;
 }
@@ -324,39 +289,7 @@ body {
 
 }
 
-
-/*input[id=username], input[id=password] {
-  display: inline-block;
-  float: left;
-  padding: 5px;
-  margin: 10px 5px;
-  width: 65%;
-}
-
-
 .login-panel {
-  background-color: transparent;
+  background-color: #eee;
+  margin-top: 150px;
 }
-
-
-input[id=username]:focus, input[id=password]:focus {
-    border: 2px solid #3b8fb5;
-}
-
-.hideButton {
-  display: none;
-}
-
-input[type=submit] {
-  display: block;
-  background-color: #000000;
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 14px;
-  padding: 10px 50px;
-  vertical-align: middle;
-  margin-bottom: 20px;
-}*/

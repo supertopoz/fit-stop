@@ -16,13 +16,13 @@ var SignUp = (props) => (
   <div className="text-center" onClick={()=> props.hideAlert() }>
     <Grid>
       <Row>
-        <Col md={6} mdOffset={3}>
+        <Col md={12} mdOffset={12}>
           <Panel className="login-panel">
             <h2>Sign Up</h2>
             <div className={props.alert}>Warning: {props.alertText}</div>
             <Form horizontal onSubmit={props.signup}>
               <FormGroup>
-                <Col md={6} mdOffset={3}>
+                <Col md={12} mdOffset={12}>
                   <FormControl
                     id="username"
                     type="email"
@@ -32,7 +32,7 @@ var SignUp = (props) => (
                 </Col>
               </FormGroup>
               <FormGroup>
-                <Col md={6} mdOffset={3}>
+                <Col md={12} mdOffset={12}>
                   <FormControl
                     d="password"
                     type="password"

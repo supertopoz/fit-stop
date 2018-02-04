@@ -18,13 +18,13 @@ var Login = (props) => (
   <div className="text-center" onClick={()=> props.hideAlert() }>
     <Grid>
       <Row>
-        <Col md={6} mdOffset={3}>
+        <Col md={12} mdOffset={12}>
           <Panel className="login-panel">
             <h2>Log In</h2>
             <div className={props.alert}>Warning: {props.alertText}</div>
             <Form horizontal onSubmit={props.login}>
               <FormGroup>
-                <Col md={6} mdOffset={3}>
+                <Col md={12} mdOffset={12}>
                   <FormControl
                     id="username"
                     type="email"
@@ -34,7 +34,7 @@ var Login = (props) => (
                 </Col>
               </FormGroup>
               <FormGroup>
-                <Col md={6} mdOffset={3}>
+                <Col md={12} mdOffset={12}>
                   <FormControl
                     d="password"
                     type="password"

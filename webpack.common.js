@@ -11,6 +11,7 @@ module.exports = {
   plugins: [ 
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
+      inject: false,
       title: 'Fit stop',
       template: 'index.html'
     }),

@@ -10,7 +10,7 @@ var Exercise = (props) => (
     <Jumbotron>
       <p className="container"><span className="exerciseName">{props.exercise.name}</span></p>
       <img src={props.exercise.picture} className="img-responsive center-block rounded img-thumbnail exerciseImage"/>
-      {props.exercise.description}
+      <p>{props.exercise.description}</p>
     </Jumbotron>
   </div>
 );
