@@ -10,7 +10,9 @@
   "scripts": {
     "start": "node ./server/server.js",
     "server": "nodemon ./server/server.js",
-    "postinstall": "webpack -p --config webpack.prod.js --progress"
+    "postinstall": "webpack -p --config webpack.prod.js --progress",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
@@ -27,7 +29,8 @@
     "nodemon": "^1.12.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-moment": "^0.6.5"
+    "react-moment": "^0.6.5",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -44,5 +47,6 @@
     "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
-  }
+  },
+  "snyk": true
 }
