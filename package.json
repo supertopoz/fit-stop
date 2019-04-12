@@ -21,7 +21,7 @@
     "express-session": "^1.15.6",
     "file-loader": "^1.1.5",
     "firebase-functions": "^0.7.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "moment": "^2.19.1",
     "mongoose": "^4.11.9",
     "nodemon": "^1.12.1",
