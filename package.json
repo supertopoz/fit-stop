@@ -13,7 +13,7 @@
     "postinstall": "webpack -p --config webpack.prod.js --progress"
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^2.0.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "cors": "^2.8.4",
