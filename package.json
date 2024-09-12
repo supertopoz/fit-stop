@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.20.3",
     "bootstrap": "^3.3.7",
     "cors": "^2.8.4",
-    "express": "^4.15.4",
+    "express": "^4.21.0",
     "express-session": "^1.15.6",
     "file-loader": "^1.1.5",
     "firebase-functions": "^0.7.1",
